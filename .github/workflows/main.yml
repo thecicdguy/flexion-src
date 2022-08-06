@@ -38,5 +38,5 @@ jobs:
 
       - name: Build and Push Container
         run: |-
-          docker build -tag "${{ env.SERVICE }}:latest" ./
-          docker push "${{ env.GAR_LOCATION }}/${{ env.SERVICE }}:latest"
+          docker build "${{ env.SERVICE }}" ./
+          docker push "${{ env.GAR_LOCATION }}"
