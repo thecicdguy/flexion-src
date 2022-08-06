@@ -38,5 +38,6 @@ jobs:
 
       - name: Build and Push Container
         run: |-
-          docker build "${{ env.SERVICE }}" ./
+          echo pwd
+          docker build "${{ env.SERVICE }}" .
           docker push "${{ env.GAR_LOCATION }}"
