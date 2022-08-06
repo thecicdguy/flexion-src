@@ -12,7 +12,7 @@ on:
 
 env:
   PROJECT_ID: scenic-shift-356222 # GCP Proj id
-  GAR_LOCATION: us-central1-docker.pkg.dev/scenic-shift-356222/flexion-repository # Artifact Registry location
+  GAR_LOCATION: us-central1 # Artifact Registry location
   SERVICE: hello-srv # TODO: update Cloud Run service name
   REGION: us-central1 # TODO: update Cloud Run service region
   # Allows you to run this workflow manually from the Actions tab
@@ -46,5 +46,5 @@ jobs:
 
       - name: Build and Push Container
         run: |-
-          docker build -t "${{ env.SERVICE }}:${{ github.sha }}" ./
-          docker push "${{ env.SERVICE }}:${{ github.sha }}"
+          docker build -t "${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{ github.sha }}" ./
+          docker push "${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{ github.sha }}"
