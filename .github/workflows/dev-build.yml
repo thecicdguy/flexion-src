@@ -20,10 +20,8 @@ env:
   GAR_LOCATION: us-central1 # Artifact Registry location
   SERVICE: hello-srv # Registry artifact name
   REGION: us-central1 # update Cloud Run service region
-  REPO_NAME: flexion-repository
-  # Allows you to run this workflow manually from the Actions tab
+  REPO_NAME: flexion-repository #Artifactory registry repo name
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
