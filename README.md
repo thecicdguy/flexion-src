@@ -13,6 +13,8 @@ feature->dev->prod
 
 This is a hello world python application. It is deployed on GCP Cloud Run.
 
-Url to access this app is,
-Prod - <a href="https://flexion-srv-prod-5pxqvk5i4a-uc.a.run.app" target="_blank"></a>
-Dev - <a href="https://flexion-srv-dev-dumtqvpqka-uc.a.run.app" target="_blank"></a>
+To acces the app,
+
+Click [Prod](https://flexion-srv-prod-5pxqvk5i4a-uc.a.run.app)
+
+Click [Dev](https://flexion-srv-dev-dumtqvpqka-uc.a.run.app)
